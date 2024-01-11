@@ -1,0 +1,19 @@
+{
+  "name": "fat-controller",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "author": "SAM CLI",
+  "license": "Apache-2.0",
+  "scripts": {
+    "unit": "jest",
+    "lint": "eslint '*.ts' --quiet --fix",
+    "compile": "tsc",
+    "test": "npm run compile && npm run unit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.485.0",
+    "@aws-sdk/client-sns": "^3.485.0",
+    "@aws-sdk/lib-dynamodb": "^3.485.0",
+    "esbuild": "^0.14.14"
+  }
+}
